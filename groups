@@ -1,5 +1,5 @@
-# UUID          Group Name
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
-ff021f3917f1b607840b93b24b36346c7a7402cd       	puppet-tomcat-distgit-core
-50967e161ff689db717b0f3c33baf9808072fb56        	puppet-tomcat-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+50967e161ff689db717b0f3c33baf9808072fb56	puppet/puppet-tomcat-distgit-ptl
+ff021f3917f1b607840b93b24b36346c7a7402cd	puppet-tomcat-distgit-core
+global:Registered-Users                 	Registered Users
