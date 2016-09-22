@@ -7,8 +7,8 @@
 
 
 Name:           puppet-tomcat
-Version:        XXX
-Release:        XXX
+Version:        1.5.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, deploys, and configures Apache Tomcat web services.
 License:        Apache 2.0
 
@@ -51,4 +51,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/tomcat/
 
 
 %changelog
+* Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 1.5.0-1.c8c6613.git
+- Newton update 1.5.0 (c8c66135f7140b91a2bb4e59672a067678cfa782)
+
 
