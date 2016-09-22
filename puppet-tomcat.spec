@@ -1,4 +1,10 @@
+%{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-tomcat
+%global commit c8c66135f7140b91a2bb4e59672a067678cfa782
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 
 Name:           puppet-tomcat
 Version:        XXX
@@ -8,7 +14,7 @@ License:        Apache 2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-tomcat
 
-Source0:        https://github.com/puppetlabs/puppetlabs-tomcat/archive/%{version}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
