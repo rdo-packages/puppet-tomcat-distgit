@@ -10,7 +10,7 @@ Name:           puppet-tomcat
 Version:        XXX
 Release:        XXX
 Summary:        Installs, deploys, and configures Apache Tomcat web services.
-License:        Apache 2.0
+License:        ASL 2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-tomcat
 
