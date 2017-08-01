@@ -53,3 +53,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/tomcat/
 %changelog
 
 
+# REMOVEME: error caused by commit https://github.com/puppetlabs/puppetlabs-tomcat/commit/05604dacdb589528a1504a0894ca2e8d908c20a9
