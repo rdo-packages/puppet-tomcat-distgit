@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-tomcat
-%global commit c8c66135f7140b91a2bb4e59672a067678cfa782
+%global commit 9fed47bdbf6cc86b15be10c4fe0e7559540eeaef
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-tomcat
-Version:        XXX
-Release:        XXX
+Version:        1.7.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, deploys, and configures Apache Tomcat web services.
 License:        ASL 2.0
 
@@ -51,5 +51,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/tomcat/
 
 
 %changelog
+* Fri Aug 25 2017 Alfredo Moralejo <amoralej@redhat.com> 1.7.0-1.9fed47bgit
+- Pike update 1.7.0 (9fed47bdbf6cc86b15be10c4fe0e7559540eeaef)
 
 
