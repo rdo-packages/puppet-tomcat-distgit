@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-tomcat
-%global commit c8c66135f7140b91a2bb4e59672a067678cfa782
+%global commit 8d1f348f9153dc3ddaf8cd3ab46bd0854e5d027b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-tomcat
-Version:        XXX
-Release:        XXX
+Version:        2.3.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, deploys, and configures Apache Tomcat web services.
 License:        ASL 2.0
 
@@ -51,5 +51,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/tomcat/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 2.3.0-1.8d1f348git
+- Update to post 2.3.0 (8d1f348f9153dc3ddaf8cd3ab46bd0854e5d027b)
+
 
 
