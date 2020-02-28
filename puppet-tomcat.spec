@@ -55,4 +55,3 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/tomcat/
 - Update to post 3.1.0 (a3f92d1f1e2fcd0bb773e4ebe37c5a205b55ac72)
 
 
-
